@@ -15,8 +15,8 @@ jobs:
 
       - name: Extract project
         run: |
-             mkdir -p SYNCAPSO-Native-Test
-             unzip -q -o SYNCAPSO-Native-Test-v4-fixed.zip -d SYNCAPSO-Native-Test
+              unzip -q -o SYNCAPSO-Native-Test-v4-fixed.zip
+              
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:

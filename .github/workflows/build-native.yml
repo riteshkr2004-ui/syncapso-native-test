@@ -13,8 +13,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Extract native project
-        run: unzip -q -o SYNCAPSO-Native-Test-v4-fixed.zip
+      - name: Extract project
+        run: |
+             mkdir -p SYNCAPSO-Native-Test
+             unzip -q -o SYNCAPSO-Native-Test-v4-fixed.zip -d SYNCAPSO-Native-Test
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
